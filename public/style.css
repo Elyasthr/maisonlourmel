@@ -1,0 +1,383 @@
+@font-face {
+    font-family: "Voga";
+    src:
+        url("fonts/Voga.woff") format("woff"),
+        url("fonts/Voga.ttf") format("ttf"),
+        url("fonts/Voga.otf") format("otf");
+}
+
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body{
+    font-family: "Voga", Arial, Helvetica, sans-serif;
+    color: #231F20;
+    background: #EAEAEA;
+    line-height: 1.65;
+    font-size: 16px;
+}
+
+h1, h2, h3{
+    color: #AD974F
+}
+
+.root{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40px 50px 1fr 50px 40px;
+    grid-auto-rows: auto 1fr auto;
+}
+
+header{
+    background-image: linear-gradient(to top, rgba(4, 4, 4, 0.65), rgba(54, 54, 54, 0.2)), url("img/test.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    grid-column: 1 / span 5; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(173, 151, 79, 0.5);
+    
+    
+}
+
+nav{
+    border-bottom: 1px solid rgba(173, 151, 79, 0.2);
+    font-size: 1.5rem;
+    color: #EAEAEA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav:hover{
+    background-color: #EAEAEA;
+    border-bottom: 1px solid #AD974F;
+    color: #231F20
+}
+nav :nth-child(2){
+    order: -1;
+}
+
+nav .navlinks{
+    display: flex;
+}
+
+nav li{
+    display: inline;
+    padding: 2rem 3rem ;
+}
+
+nav li:hover{
+    background-color: rgba(173, 151, 79, 0.8);
+}
+
+nav li a{
+    color: #EAEAEA;
+}
+
+nav:hover li a{
+    color: #231F20
+}
+
+
+
+
+nav label{
+    padding: 0 3rem;
+    margin-top: 10px;
+}
+
+nav label img{
+    height: 80px;
+    width: 80px;
+}
+
+nav .toggle{
+    position: absolute;
+    top: 1.7rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+
+nav .toggle .bar{
+    height: 3px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: #AD974F;
+
+}
+
+nav:hover .toggle .bar{
+    background-color: #AD974F;
+}
+
+.presentation{
+    color: #EAEAEA;
+    padding: 2rem 4rem;
+
+    margin-right: 15rem;
+    font-size: 1.5rem;
+    
+}
+
+.btn-primary {
+    background: none;
+    border: 1px solid #EAEAEA;
+
+    padding: 15px 32px;
+    margin: 10px 0;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-primary:hover{
+    background-color: #EAEAEA;
+    border: 1px solid transparent;
+    
+}
+
+.btn-primary a{
+    color: #EAEAEA;
+}
+
+.btn-primary:hover a{
+    color: #231F20;
+    
+}
+
+
+.container{
+    background-color: #EAEAEA;
+    grid-column: 2 / span 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 0;
+    
+}
+
+.produits{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.produits h2{
+    font-size: 2rem;
+    padding-bottom: 2rem ;
+}
+
+.card-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    
+    width: 300px;
+    border: 1px solid white;
+    border-radius: 1rem;
+    margin: 2rem;
+}
+
+.card:hover{
+
+    background-color: #f1f1f1;
+
+}
+
+.card-img img{
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.card-body{
+    padding: 1rem;
+}
+
+.card-title{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.card-title .best_seller{
+    color: #83181b;
+    font-size:0.8rem;
+}
+.card-description{
+    font-size: 1rem;
+    text-align: justify;
+    padding-bottom: 1rem;
+}
+
+.card_note{
+    color: #AD974F;
+    text-align: center;
+}
+.card-price{
+    font-size: 2rem;
+    padding-top: 1.5rem;
+    text-align: center;
+    color: #AD974F;
+    display: flex;
+    justify-content: center;
+}
+
+.card-price .item__currency{
+    font-size: 1rem;
+}
+
+.card-btn{
+    background: #EAEAEA;
+    border: 1px solid #AD974F;
+    color: #AD974F;
+    width: 200px;
+    align-self: center;
+    padding: 15px 32px;
+    margin: 20px 0;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.card-btn:hover{
+    background-color: rgba(173, 151, 79, 0.8);;
+    border: 1px solid #EAEAEA;
+    color: #EAEAEA;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.about h2{
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.about p{
+    font-size: 1.5rem;
+    text-align: justify;
+    padding: 2rem;
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    border-top: 1px solid rgba(173, 151, 79, 0.2);;
+    background-color: #EAEAEA;
+    color: #9d9d9d;
+    grid-column: 1 / span 5;
+}
+
+.footer-card{
+    padding: 2rem 1rem;
+    width: 300px;
+}
+
+.footer-card h3{
+    padding-bottom: 2rem ;
+}
+
+@media screen and (max-width: 1024px){
+    .container{
+        grid-column: 2 / span 3;
+    }
+
+    .card-container{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .container{
+        grid-column: 1 / 6;
+    }
+
+    nav .toggle{
+        display: flex;
+    }
+    nav label{
+
+        padding: 2rem;
+    }
+    nav label img{
+        position: absolute;
+        top: 0;
+        left: 1rem;
+    }
+
+    nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav .navlinks{
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav .navlinks.active{
+        display: flex;
+    }
+
+    nav li{
+        padding: 1rem;
+    }
+
+    nav :nth-child(2){
+        order: 0;
+    }
+
+    .presentation{
+        color: #EAEAEA;
+        padding: 1rem 2rem;
+        margin-right: 0;
+        font-size: 1rem;
+        
+    }
+
+    .card{
+        align-self: center;
+        margin: 1rem;
+    }
+
+    .about p{
+        font-size: 1rem;
+        padding: 1rem;
+        text-align: justify;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+
+    .footer-card{
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+     
+}

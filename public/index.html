@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="root">
+        <header>
+            <nav>
+                <label class="logo"><img src="./img/logo.png" ></label>
+                <ul class="navlinks">
+                    <li><a href="#products">PRODUCTS</a></li>
+                    <li><a href="#home">HOME</a></li>
+                </ul>
+                <ul class="navlinks">
+                    <li><a href="#contact">CONTACT</a></li>
+                    <li><a href="#about">ABOUT US</a></li>
+                </ul>
+                <div class="toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+            <div class="presentation" id="home">
+                <p>An innovative brand that offers singular aromas. Developed according to the rules of the art,<br>
+                    Maison Lourmel give you a unique collection of perfumes made in Paris</p>
+                <h1>Lourmel.</h1>
+                <button class="btn-primary"><a href="#products">DISCOVER</a></button>
+            </div>
+        </header>
+        <div class="container" >
+            <div class="produits"id="products" >
+                <h2>PRODUCTS</h2>
+                <div class="card-container" >
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./img/product.jpeg">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Lacilya</h3>
+                            <p class="card-description">A bewitching perfume with its amber and floral aromas. A fragrance of unforgettable intensity</p>
+                            <p><span class="card_note">Top notes :</span> Bergamot essence - Lemon</p>
+                            <p><span class="card_note">Middle notes :</span>  Patchouli essenc - Orange blossom</p>
+                            <p><span class="card_note">Base notes :</span>  Amber - Vanilla</p>
+                            <span class="card-price"><sup class="item__currency">$</sup>30</span>
+                        </div>
+                    </div>
+                    <div class="card" >
+                        <div class="card-img">
+                            <img src="./img/product.jpeg">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Majestic success <span class="best_seller">BEST SELLER</span></h3>
+                            <p class="card-description">A woody, musky and amber fragrance that makes everything tender. Its light and bewitching aroma as well as its white musk appreciated by all is suitable for men as well as women. Travel to the Middle-East with its incense note and Italy with its iris note</p>
+                            <p><span class="card_note">Top notes :</span> Yemen incense essence</p>
+                            <p><span class="card_note">Middle notes :</span>  Iris</p>
+                            <p><span class="card_note">Base notes :</span> White musk</p>
+                            <span class="card-price"><sup class="item__currency">$</sup>30</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./img/product.jpeg">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Wonderful garden</h3>
+                            <p class="card-description">Sensual and refreshing perfume inspired by the flowers of the East for their woody side and the sinking of that of Ylang-Ylang</p>
+                            <p><span class="card_note">Top notes :</span> Fruity note - Pear - Pink Pepper</p>
+                            <p><span class="card_note">Middle notes :</span> Tuberose - Jasmine - Ylang-Ylang</p>
+                            <p><span class="card_note">Base notes :</span> Amber - Musk - Patchouli</p>
+                            <span class="card-price"><sup class="item__currency">$</sup>30</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="card-btn">RESERVE</button>
+            </div>
+            <div class="about" id="about">
+                <h2>ABOUT US</h2>
+                <p>Maison Lourmel is a French perfumery brand. Created by two brothers in love with quality perfumes, for perfume lovers. We know what you want, because we are like you. Of the irreproachable quality of the exceptional scents which will make you travel from the East to the West. All our creations are unisex and conceived in collaboration with great names in perfumery, located in Paris and Grasse. Grasse is located in the south of France and is known worldwide as the capital of perfumery. Let yourself be charmed by the diversity of our olfactory universe rich in rigorously selected natural raw materials</p>
+            </div>
+        </div>
+       
+        <footer>
+            <div class="footer-card">
+                <h3 id="contact">CONTACT</h3>
+                <p>DC French bro L.L.C</p>
+                <p>1309 Coffeen Avenue STE 1200
+                    Sheridan, Wyoming 82801
+                    USA</p>
+            </div>
+            <div class="footer-card">
+                <h3>FOLLOW US</h3>
+                <p>INSTAGRAM</p>
+                <p>SNAPCHAT</p>
+                <p>FACEBOOK</p>
+                <p>WATHSAPP</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        const toggle = document.getElementsByClassName('toggle')[0];
+        const navlinks = document.getElementsByClassName('navlinks')[0];
+        const navlinks2 = document.getElementsByClassName('navlinks')[1];
+        
+
+        toggle.addEventListener('click',()=>{
+            navlinks.classList.toggle('active');
+            navlinks2.classList.toggle('active');
+        })
+
+    </script>
+</body>
+</html>
