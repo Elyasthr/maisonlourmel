@@ -1,9 +1,8 @@
 @font-face {
-    font-family: "glacial";
+    font-family: "Glacial";
     src:
-        url("fonts/glacial/glacial.otf") format("otf"),
-        url("fonts/glacial/glacial-italic.otf") format("otf"),
-        url("fonts/glacial/glacial-bold.otf") format("otf");
+        url("fonts/glacial/Glacial-Regular.woff") format("woff"),
+        url("fonts/glacial/Glacial-Bold.woff") format("woff"),
 }
 
 *,::after,::before{
@@ -15,7 +14,7 @@
 }
 
 body{
-    font-family: "glacial", Arial, Helvetica, sans-serif;
+    font-family: "Glacial", Arial, Helvetica, sans-serif;
     color: #231F20;
     background: #EAEAEA;
     line-height: 1.65;
