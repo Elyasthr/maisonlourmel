@@ -1,9 +1,9 @@
 @font-face {
-    font-family: "Voga";
+    font-family: "glacial";
     src:
-        url("fonts/Voga.woff") format("woff"),
-        url("fonts/Voga.ttf") format("ttf"),
-        url("fonts/Voga.otf") format("otf");
+        url("fonts/glacial/glacial.otf") format("otf"),
+        url("fonts/glacial/glacial-italic.otf") format("otf"),
+        url("fonts/glacial/glacial-bold.otf") format("otf");
 }
 
 *,::after,::before{
@@ -15,15 +15,14 @@
 }
 
 body{
-    font-family: "Voga", Arial, Helvetica, sans-serif;
+    font-family: "glacial", Arial, Helvetica, sans-serif;
     color: #231F20;
     background: #EAEAEA;
     line-height: 1.65;
-    font-size: 16px;
 }
 
 h1, h2, h3{
-    color: #AD974F
+    color: #C79A56
 }
 
 .root{
@@ -50,7 +49,7 @@ header{
 
 nav{
     border-bottom: 1px solid rgba(173, 151, 79, 0.2);
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: #EAEAEA;
     display: flex;
     justify-content: center;
@@ -59,7 +58,7 @@ nav{
 
 nav:hover{
     background-color: #EAEAEA;
-    border-bottom: 1px solid #AD974F;
+    border-bottom: 1px solid #C79A56;
     color: #231F20
 }
 nav :nth-child(2){
@@ -115,12 +114,12 @@ nav .toggle .bar{
     height: 3px;
     width: 100%;
     border-radius: 5px;
-    background-color: #AD974F;
+    background-color: #C79A56;
 
 }
 
 nav:hover .toggle .bar{
-    background-color: #AD974F;
+    background-color: #C79A56;
 }
 
 .presentation{
@@ -190,9 +189,9 @@ nav:hover .toggle .bar{
 
 .card{
     
-    width: 300px;
-    border: 1px solid white;
-    border-radius: 1rem;
+    width: 303px;
+    border: 1px solid #C79A56;
+    border-radius: 0.25rem;
     margin: 2rem;
 }
 
@@ -203,8 +202,9 @@ nav:hover .toggle .bar{
 }
 
 .card-img img{
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+
 }
 .card-body{
     padding: 1rem;
@@ -212,12 +212,13 @@ nav:hover .toggle .bar{
 
 .card-title{
     font-size: 1.5rem;
+    padding-bottom: 1rem;
     text-align: center;
 }
 
 .card-title .best_seller{
     color: #83181b;
-    font-size:0.8rem;
+    font-size:0.5rem;
 }
 .card-description{
     font-size: 1rem;
@@ -225,15 +226,18 @@ nav:hover .toggle .bar{
     padding-bottom: 1rem;
 }
 
+.card-note{
+    text-align: justify;
+}
+
 .card_note{
-    color: #AD974F;
-    text-align: center;
+    color: #C79A56;
 }
 .card-price{
     font-size: 2rem;
     padding-top: 1.5rem;
     text-align: center;
-    color: #AD974F;
+    color: #C79A56;
     display: flex;
     justify-content: center;
 }
@@ -244,8 +248,8 @@ nav:hover .toggle .bar{
 
 .card-btn{
     background: #EAEAEA;
-    border: 1px solid #AD974F;
-    color: #AD974F;
+    border: 1px solid #C79A56;
+    color: #C79A56;
     width: 200px;
     align-self: center;
     padding: 15px 32px;
@@ -269,11 +273,11 @@ nav:hover .toggle .bar{
 }
 .about h2{
     font-size: 2rem;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .about p{
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     text-align: justify;
     padding: 2rem;
 }
