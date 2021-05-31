@@ -1,10 +1,3 @@
-@font-face {
-    font-family: "Glacial";
-    src:
-        url("fonts/glacial/Glacial-Regular.woff") format("woff"),
-        url("fonts/glacial/Glacial-Bold.woff") format("woff"),
-}
-
 *,::after,::before{
     margin: 0;
     padding: 0;
@@ -14,7 +7,7 @@
 }
 
 body{
-    font-family: "Glacial", Arial, Helvetica, sans-serif;
+    font-family: "Times New Roman", Arial, Helvetica, sans-serif;
     color: #231F20;
     background: #EAEAEA;
     line-height: 1.65;
@@ -299,6 +292,11 @@ footer{
 
 .footer-card h3{
     padding-bottom: 2rem ;
+}
+
+.footer-card .social{
+    height: 2rem;
+    margin: 1rem;
 }
 
 @media screen and (max-width: 1024px){
